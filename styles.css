@@ -1,0 +1,186 @@
+:root {
+  --bg-color: #f8f9fa;
+  --surface-color: #ffffff;
+  --text-color: #212529;
+  --muted-text: #495057;
+  --accent: #0d6efd;
+  --border-color: #dee2e6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI";
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #212529;
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 2rem, 2.5rem);
+}
+
+.content-section {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.content-section h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.content-section p {
+  margin-bottom: 0;
+  color: var(--muted-text);
+}
+
+.project-list,
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-item {
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fdfdff;
+}
+
+.project-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project-item p {
+  margin-bottom: 0.75rem;
+}
+
+.project-item a,
+.contact-item a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-item a:hover,
+.contact-item a:hover,
+.project-item a:focus,
+.contact-item a:focus {
+  text-decoration: underline;
+}
+
+.contact-item {
+  margin-bottom: 0.75rem;
+}
+
+#contact-form {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  background-color: #fcfdff;
+}
+
+#contact-form h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  font: inherit;
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+#contact-form button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.25rem;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#contact-form button:hover,
+#contact-form button:focus {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}

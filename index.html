@@ -101,9 +101,12 @@
         <h1>Contact</h1>
         <ul class="contact-list">
           <li class="contact-item">
-            <a href="mailto:taitedodson@hotmail.com"
-              >Email Me, TaiteDodson@hotmail.com</a
-            >
+            <p>
+              Email Me,
+              <a href="mailto:taitedodson@hotmail.com"
+                >TaiteDodson@hotmail.com</a
+              >
+            </p>
           </li>
           <li class="contact-item">
             <a href="https://www.linkedin.com/in/taite-dodson/"
@@ -111,7 +114,28 @@
             >
           </li>
         </ul>
-        <p>[Insert contact form in the future]</p>
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/mreypzyq"
+          method="POST"
+        >
+          <h3>Contact Me!</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <input
+            type="hidden"
+            name="subject"
+            value="New contact form submission"
+          />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </main>
   </body>
