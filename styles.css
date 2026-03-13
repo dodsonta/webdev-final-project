@@ -1,10 +1,10 @@
 :root {
-  --bg-color: #f8f9fa;
-  --surface-color: #ffffff;
-  --text-color: #212529;
-  --muted-text: #495057;
-  --accent: #0d6efd;
-  --border-color: #dee2e6;
+  --bg-color: rgb(248, 249, 250);
+  --text-color: rgb(33, 37, 41);
+  --muted-text: rgb(73, 80, 87);
+  --accent: rgb(13, 110, 253);
+  --border-color: rgb(222, 226, 230);
+  --inner-bg-color: rgb(253, 253, 255);
 }
 
 * {
@@ -26,7 +26,7 @@ header {
 }
 
 .navbar {
-  background-color: #212529;
+  background-color: rgb(33, 37, 41);
   padding: 0.75rem 1.25rem;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
@@ -41,7 +41,7 @@ header {
 }
 
 .nav-item a {
-  color: #f8f9fa;
+  color: rgb(248, 249, 250);
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 0.75rem;
@@ -66,7 +66,7 @@ main {
 }
 
 .content-section {
-  background-color: var(--surface-color);
+  background-color: white;
   border: 1px solid var(--border-color);
   border-radius: 0.75rem;
   padding: 1.5rem;
@@ -97,7 +97,7 @@ main {
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: #fdfdff;
+  background-color: var(--inner-bg-color);
 }
 
 .project-item h2 {
@@ -133,7 +133,7 @@ main {
   padding: 1.25rem;
   border: 1px solid var(--border-color);
   border-radius: 0.25rem;
-  background-color: #fcfdff;
+  background-color: var(--inner-bg-color);
 }
 
 #contact-form h3 {
@@ -158,7 +158,7 @@ main {
   border-radius: 0.25rem;
   font: inherit;
   color: var(--text-color);
-  background-color: #fff;
+  background-color: var(--inner-bg-color);
 }
 
 #contact-form input:focus,
@@ -174,15 +174,14 @@ main {
   border: 1px solid var(--accent);
   border-radius: 0.25rem;
   background-color: var(--accent);
-  color: #fff;
+  color: white;
   font-weight: 600;
   cursor: pointer;
 }
 
 #contact-form button:hover,
 #contact-form button:focus {
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: rgb(11, 94, 215);
 }
 
 .carousel-container {
@@ -190,6 +189,9 @@ main {
   margin: auto;
   aspect-ratio: 16 / 9;
   overflow: hidden;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .slide {
@@ -211,21 +213,20 @@ main {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -25px;
-  padding: 16px;
+  margin-top: -10px;
+  padding: 15px;
   color: rgb(136, 136, 136);
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   transition: 0.5s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
 }
 
 .prev:hover,
