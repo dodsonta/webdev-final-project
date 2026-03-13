@@ -54,7 +54,7 @@ header {
 }
 
 main {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem 3rem;
 }
@@ -183,4 +183,64 @@ main {
 #contact-form button:focus {
   background-color: #0b5ed7;
   border-color: #0a58ca;
+}
+
+.carousel-container {
+  position: relative;
+  margin: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  padding: 16px;
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.caption {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1.75rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }

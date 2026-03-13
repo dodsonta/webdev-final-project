@@ -29,13 +29,12 @@
 
     <main>
       <h1 class="main-title">Welcome to Taite Dodson's Portfolio</h1>
-      <div class="carousel container">
+      <div class="carousel-container">
         <div class="slide">
           <img
             src="images/graduation.png"
             alt="Graduation"
             class="carousel-image"
-            style="width: 100%; height: auto"
           />
           <div class="caption">Graduation from Oregon State University</div>
         </div>
@@ -44,7 +43,6 @@
             src="images/osu.png"
             alt="Oregon State University Logo"
             class="carousel-image"
-            style="width: 100%; height: auto"
           />
           <div class="caption">My alma mater: Oregon State University</div>
         </div>
@@ -59,12 +57,7 @@
           </div>
         </div>
         <div class="slide">
-          <img
-            src="images/intel.png"
-            alt="Intel Logo"
-            class="carousel-image"
-            style="width: 100%; height: auto"
-          />
+          <img src="images/intel.png" alt="Intel Logo" class="carousel-image" />
           <div class="caption">My first internship, Intel</div>
         </div>
         <div class="slide">
@@ -72,7 +65,6 @@
             src="images/collins.png"
             alt="Collins Aerospace Logo"
             class="carousel-image"
-            style="width: 100%; height: auto"
           />
           <div class="caption">My second internship, Collins Aerospace</div>
         </div>
@@ -81,12 +73,11 @@
             src="images/bytagig.png"
             alt="Bytagig Logo"
             class="carousel-image"
-            style="width: 100%; height: auto"
           />
           <div class="caption">My current part-time job, Bytagig</div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
       </div>
 
       <div id="About" class="content-section">
