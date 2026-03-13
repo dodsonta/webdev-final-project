@@ -18,6 +18,7 @@ function currSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
+  let counter = document.getElementById("carousel-counter");
   if (n > slides.length) {
     slideIdx = 1;
   }
@@ -28,4 +29,5 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIdx - 1].style.display = "block";
+  counter.textContent = `${slideIdx} / ${slides.length}`;
 }
