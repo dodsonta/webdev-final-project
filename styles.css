@@ -63,7 +63,7 @@ main {
 .main-title {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: clamp(2rem, 2rem, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
 }
 
 .content-section {
@@ -78,7 +78,7 @@ main {
 .content-section h1 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .content-section p {
@@ -104,7 +104,7 @@ main {
 .project-item h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
 }
 
 .project-item p {
@@ -139,7 +139,7 @@ main {
 
 #contact-form h3 {
   margin: 0 0 1rem;
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--text-color);
 }
 
@@ -264,4 +264,26 @@ main {
   padding: 5px 10px;
   border-radius: 0.25rem;
   font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+    padding: 10px 5px;
+  }
+
+  .prev,
+  .next {
+    padding: 10px;
+    font-size: 1rem;
+  }
 }
