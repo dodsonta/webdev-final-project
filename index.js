@@ -11,10 +11,6 @@ function changeSlide(n) {
   showSlides((slideIdx += n));
 }
 
-function currSlide(n) {
-  showSlides((slideIdx = n));
-}
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slide");
@@ -25,9 +21,24 @@ function showSlides(n) {
   if (n < 1) {
     slideIdx = slides.length;
   }
+
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    if (i == slideIdx - 1) {
+      slides[i].style.display = "block";
+      slides[i].setAttribute("aria-hidden", "false");
+    } else {
+      slides[i].style.display = "none";
+      slides[i].setAttribute("aria-hidden", "true");
+    }
   }
-  slides[slideIdx - 1].style.display = "block";
   counter.textContent = `${slideIdx} / ${slides.length}`;
 }
+
+let carousel = document.getElementById("highlights-carousel");
+carousel.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowLeft") {
+    changeSlide(-1);
+  } else if (event.key === "ArrowRight") {
+    changeSlide(1);
+  }
+});

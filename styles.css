@@ -5,6 +5,7 @@
   --accent: rgb(13, 110, 253);
   --border-color: rgb(222, 226, 230);
   --inner-bg-color: rgb(253, 253, 255);
+  --link-color: rgb(10, 80, 185);
 }
 
 * {
@@ -112,7 +113,7 @@ main {
 
 .project-item a,
 .contact-item a {
-  color: var(--accent);
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 600;
 }
@@ -212,12 +213,14 @@ main {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  margin-top: -10px;
+  transform: translateY(-50%);
   padding: 15px;
   color: rgb(136, 136, 136);
   font-size: 1.5rem;
   transition: 0.5s ease;
   background-color: rgba(0, 0, 0, 0.5);
+  border: 0;
+  border-radius: 0.25rem;
 }
 
 .next {
@@ -230,6 +233,13 @@ main {
 
 .prev:hover,
 .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.prev:focus,
+.next:focus {
+  outline: none;
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
 }
