@@ -21,3 +21,5 @@ There are no plugins or special tools needed to run this code, it's a simple HTM
 [Nutrient.io's guide on PDF embedding](https://www.nutrient.io/blog/how-to-embed-a-pdf-viewer-in-your-website/)
 
 [W3School's Slideshow tutorial](https://www.w3schools.com/howto/howto_js_slideshow.asp)
+
+[Bootstrap's color guide](https://getbootstrap.com/docs/4.0/utilities/colors/)
