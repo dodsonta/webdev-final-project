@@ -1,10 +1,10 @@
 :root {
-  --bg-color: rgb(248, 249, 250);
-  --text-color: rgb(33, 37, 41);
-  --muted-text: rgb(73, 80, 87);
+  --bg-color: rgb(250, 250, 250);
+  --text-color: black;
+  --paragraph-text: rgb(73, 80, 87);
   --accent: rgb(13, 110, 253);
-  --border-color: rgb(222, 226, 230);
-  --inner-bg-color: rgb(253, 253, 255);
+  --border-color: rgb(218, 218, 218);
+  --inner-bg-color: rgb(252, 252, 252);
   --link-color: rgb(10, 80, 185);
 }
 
@@ -75,7 +75,7 @@ main {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
 }
 
-.content-section h1 {
+.content-section h2 {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -83,7 +83,7 @@ main {
 
 .content-section p {
   margin-bottom: 0;
-  color: var(--muted-text);
+  color: var(--paragraph-text);
 }
 
 .project-list,
@@ -101,7 +101,7 @@ main {
   background-color: var(--inner-bg-color);
 }
 
-.project-item h2 {
+.project-item h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
@@ -157,7 +157,6 @@ main {
   margin-bottom: 1rem;
   border: 1px solid var(--border-color);
   border-radius: 0.25rem;
-  font: inherit;
   color: var(--text-color);
   background-color: var(--inner-bg-color);
 }
@@ -173,6 +172,7 @@ main {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
+  border-width: 0.05rem;
   background-color: var(--accent);
   color: white;
   font-weight: 600;
