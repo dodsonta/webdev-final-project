@@ -4,7 +4,7 @@
 
 ## About
 
-This is my final project for CS 563 at Portland Statue University. This acts as a pseudo resume. Going over my accomplishments in my academic and professional life.
+This is my final project for CS 563 at Portland State University. This acts as a pseudo resume. Going over my accomplishments in my academic and professional life.
 
 ## How to run
 
